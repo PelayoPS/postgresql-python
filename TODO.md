@@ -8,3 +8,4 @@ seaborn:
 Modificar los comentarios con los _types_ en los comentarios
 Manual técnico del desarrollo de la aplicación()
 Testear los límites(más tareas completadas que tareas totales)
+Subir tareas al drive
