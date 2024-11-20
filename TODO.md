@@ -4,7 +4,7 @@ Interfaz, diseño o modificación necesaria(Apolion)
 Manual de usuario(Nacho)
 seaborn:
     - Heatmap con el número de tareas por día
-    - Gráfico de barras con la eficiencia por usuario
+    - Gráfico de barras con la eficiencia por usuario(permitir filtrar por user dentro de la gui?)
 Modificar los comentarios con los _types_ en los comentarios
 Manual técnico del desarrollo de la aplicación()
 Testear los límites(más tareas completadas que tareas totales)
