@@ -1,0 +1,8 @@
+- TODO:
+    - Código:
+        -. Una vez los datos son guardados, subirlos a la base de datos.
+        -. Añadir el manejo de persistencia a la interfaz gráfica.(eligiendo la ruta donde se guarden los datos)
+        -. Mejoras
+
+    - Documentación:
+        -. Todo xD
