@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 from src.model.tabla import Tabla
+from src.interface.data_dialog import DataDialog
 
 class App:
     """Clase que representa la ventana principal de la aplicación.
@@ -128,11 +129,9 @@ class App:
         """
         tabla = Tabla(usuario, tareas, tareas_completadas, dia)
         self.tablas.append(tabla)
+        # TODO subir a base de datos y no sólo en local
 
     def ver_datos(self):
-        """Muestra los datos guardados en la base de datos.
-        TODO modificar para cargar datos de la base de datos. en lugar de ejecución
-        """
-        for tabla in self.tablas:
-            print(tabla)
-        
+        """Muestra los datos guardados en la base de datos."""
+        DataDialog(self.root, self.tablas)
+

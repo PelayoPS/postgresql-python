@@ -285,3 +285,35 @@
 2024-11-19 14:25:29,812 - INFO - Exportando tablas a CSV...
 2024-11-19 14:25:29,846 - INFO - Tablas exportadas correctamente
 2024-11-19 14:25:29,847 - INFO - Proceso finalizado correctamente
+2024-11-20 13:47:14,586 - INFO - Cargando interfaz gráfica...
+2024-11-20 13:47:18,553 - INFO - Conexión a la base de datos establecida
+2024-11-20 13:47:45,063 - INFO - Datos guardados: Usuario: pelayo, Tareas: 1, Tareas Completadas: 1, Día: Lunes
+2024-11-20 13:47:55,988 - INFO - Datos guardados: Usuario: pelayo, Tareas: 1, Tareas Completadas: 1, Día: Lunes
+2024-11-20 13:47:56,112 - INFO - Datos guardados: Usuario: pelayo, Tareas: 1, Tareas Completadas: 1, Día: Lunes
+2024-11-20 13:47:56,248 - INFO - Datos guardados: Usuario: pelayo, Tareas: 1, Tareas Completadas: 1, Día: Lunes
+2024-11-20 13:47:56,379 - INFO - Datos guardados: Usuario: pelayo, Tareas: 1, Tareas Completadas: 1, Día: Lunes
+2024-11-20 13:47:56,483 - INFO - Datos guardados: Usuario: pelayo, Tareas: 1, Tareas Completadas: 1, Día: Lunes
+2024-11-20 13:48:12,426 - INFO - Exportando tablas a CSV...
+2024-11-20 13:48:12,494 - INFO - Tablas exportadas correctamente
+2024-11-20 13:48:12,495 - INFO - Proceso finalizado correctamente
+2024-11-20 13:49:37,803 - INFO - Cargando interfaz gráfica...
+2024-11-20 13:49:41,494 - INFO - Conexión a la base de datos establecida
+2024-11-20 13:49:45,276 - INFO - Datos guardados: Usuario: p, Tareas: 5, Tareas Completadas: 5, Día: Lunes
+2024-11-20 13:49:53,308 - INFO - Exportando tablas a CSV...
+2024-11-20 13:49:53,455 - INFO - Tablas exportadas correctamente
+2024-11-20 13:49:53,455 - INFO - Proceso finalizado correctamente
+2024-11-20 13:52:24,069 - INFO - Cargando interfaz gráfica...
+2024-11-20 13:52:28,449 - INFO - Conexión a la base de datos establecida
+2024-11-20 13:52:32,454 - INFO - Datos guardados: Usuario: p, Tareas: 4, Tareas Completadas: 4, Día: Lunes
+2024-11-20 13:53:01,350 - INFO - Datos guardados: Usuario: p, Tareas: 4, Tareas Completadas: 4, Día: Lunes
+2024-11-20 13:53:08,086 - INFO - Datos guardados: Usuario: p, Tareas: 4, Tareas Completadas: 4, Día: Lunes
+2024-11-20 13:53:14,104 - INFO - Exportando tablas a CSV...
+2024-11-20 13:53:14,148 - INFO - Tablas exportadas correctamente
+2024-11-20 13:53:14,148 - INFO - Proceso finalizado correctamente
+2024-11-20 14:05:41,303 - INFO - Cargando interfaz gráfica...
+2024-11-20 14:05:52,568 - INFO - Conexión a la base de datos establecida
+2024-11-20 14:05:59,259 - INFO - Datos guardados: Usuario: pelayo, Tareas: 1, Tareas Completadas: 1, Día: Lunes
+2024-11-20 14:06:04,510 - INFO - Datos guardados: Usuario: pelayo, Tareas: 1, Tareas Completadas: 1, Día: Lunes
+2024-11-20 14:06:20,494 - INFO - Exportando tablas a CSV...
+2024-11-20 14:06:20,530 - INFO - Tablas exportadas correctamente
+2024-11-20 14:06:20,530 - INFO - Proceso finalizado correctamente
