@@ -331,3 +331,9 @@
 2024-11-22 09:06:59,754 - INFO - Tablas exportadas correctamente
 2024-11-22 09:06:59,759 - INFO - Proceso finalizado correctamente
 2024-11-22 10:10:17,799 - INFO - Cargando interfaz gráfica...
+2024-11-22 12:38:21,334 - INFO - Cargando interfaz gráfica...
+2024-11-22 12:38:30,409 - INFO - Conexión a la base de datos establecida
+2024-11-22 12:38:39,180 - INFO - Datos guardados: Usuario: pablo, Tareas: 12, Tareas Completadas: 6, Día: Martes
+2024-11-22 12:38:41,968 - INFO - Exportando tablas a CSV...
+2024-11-22 12:38:42,279 - INFO - Tablas exportadas correctamente
+2024-11-22 12:38:42,279 - INFO - Proceso finalizado correctamente
