@@ -1,7 +1,7 @@
-
 import requests
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
 # Reemplaza con tu propio repositorio
 repo_owner = 'PelayoPS'
@@ -23,6 +23,10 @@ df['date'] = pd.to_datetime(df['date'])
 
 # Cuenta los commits por día
 commits_per_day = df.groupby(df['date'].dt.date).size()
+
+# Elimina el archivo de la gráfica de commits si existe
+if os.path.exists('commit_graph.png'):
+    os.remove('commit_graph.png')
 
 # Grafica los datos
 plt.figure(figsize=(12, 6))
