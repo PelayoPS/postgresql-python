@@ -6,10 +6,9 @@ Este proyecto tiene como objetivo proporcionar una comprensión profunda de Post
 
 ## Tecnologías Utilizadas
 
-- ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) **Python**: Para el procesamiento y almacenamiento de datos.
-- ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white) **PostgreSQL**: Base de datos relacional para almacenar la información.
-- ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=python&logoColor=white) **Seaborn**: Librería de visualización de datos en Python.
-- ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078d7?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) **Visual Studio Code**: Editor de código utilizado para el desarrollo.
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="20" alt="python logo"/> **Python**: Para el procesamiento y almacenamiento de datos.
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" height="20" alt="python logo"/> **PostgreSQL**: Base de datos relacional para almacenar la información.
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="20" alt="python logo"/> **Visual Studio Code**: Editor de código utilizado para el desarrollo.
 
 ## Instalación
 
