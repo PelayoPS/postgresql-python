@@ -57,7 +57,7 @@ Este proyecto tiene como objetivo proporcionar una comprensión profunda de Post
 
 ## Gráfico de Commits
 
-![Gráfico de Commits](commit_graph.png)
+![Gráfico de Commits](https://github.com/PelayoPS/postgresql-python/suites/commit-graph/commit_graph.png)
 
 ## Desarrolladores
 
