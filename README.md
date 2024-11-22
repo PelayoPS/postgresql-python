@@ -65,6 +65,6 @@ Este proyecto tiene como objetivo proporcionar una comprensión profunda de Post
 - [Apolion-Augusto](https://github.com/Apolion-Augusto)
 - [dignaciovicente](https://github.com/dignaciovicente)
 - [Gumko92](https://github.com/Gumko92)
-- [Pablirry19](https://github.com/Pablirry19)
+- [Pablirry19](https://github.com/Pablirry)
 
 
