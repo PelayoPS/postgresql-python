@@ -58,7 +58,7 @@ Este proyecto tiene como objetivo proporcionar una comprensión profunda de Post
 
 ## Gráfico de Commits
 
-![Gráfico de Commits](./commit_graph.png)
+![Gráfico de Commits](commit_graph.png)
 
 ## Desarrolladores
 
