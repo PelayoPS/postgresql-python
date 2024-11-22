@@ -135,3 +135,4 @@ class App:
         """Muestra los datos guardados en la base de datos."""
         DataDialog(self.root, self.tablas)
 
+

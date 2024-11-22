@@ -74,3 +74,4 @@ class LoginWindow:
                 self.error_label.config(text=error_msg)
                 self.logger.error(error_msg)
             return
+
