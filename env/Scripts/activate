@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\pelay\Desktop\repos\postgresql-python\env"
+VIRTUAL_ENV="E:\2ºDAM\Sistemas de gestion empresarial\Python\Tarea_Iker\Postgresql_Python\postgresql-python\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

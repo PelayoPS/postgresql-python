@@ -318,3 +318,58 @@
 2024-11-20 14:06:20,530 - INFO - Tablas exportadas correctamente
 2024-11-20 14:06:20,530 - INFO - Proceso finalizado correctamente
 2024-11-20 14:21:00,452 - INFO - Cargando interfaz gráfica...
+2024-11-20 21:18:27,219 - INFO - Cargando interfaz gráfica...
+2024-11-20 21:19:22,817 - INFO - Cargando interfaz gráfica...
+2024-11-20 21:20:13,876 - ERROR - Credenciales incorrectas.
+2024-11-20 21:20:24,123 - ERROR - Credenciales incorrectas.
+2024-11-20 21:20:30,005 - ERROR - Credenciales incorrectas.
+2024-11-20 21:38:39,760 - INFO - Cargando interfaz gráfica...
+2024-11-20 21:38:47,488 - ERROR - Credenciales incorrectas.
+2024-11-20 21:38:58,369 - ERROR - Credenciales incorrectas.
+2024-11-20 21:38:58,939 - ERROR - Credenciales incorrectas.
+2024-11-20 21:39:29,017 - ERROR - Credenciales incorrectas.
+2024-11-20 21:39:29,610 - ERROR - Credenciales incorrectas.
+2024-11-20 21:39:36,622 - ERROR - Credenciales incorrectas.
+2024-11-20 21:40:51,799 - ERROR - Credenciales incorrectas.
+2024-11-20 21:40:52,553 - ERROR - Credenciales incorrectas.
+2024-11-20 21:40:52,757 - ERROR - Credenciales incorrectas.
+2024-11-20 21:41:05,264 - ERROR - Credenciales incorrectas.
+2024-11-20 21:41:05,957 - ERROR - Credenciales incorrectas.
+2024-11-20 21:41:06,122 - ERROR - Credenciales incorrectas.
+2024-11-20 21:41:24,934 - ERROR - Credenciales incorrectas.
+2024-11-20 21:41:38,476 - ERROR - Credenciales incorrectas.
+2024-11-20 21:41:42,719 - ERROR - Credenciales incorrectas.
+2024-11-20 21:42:52,285 - ERROR - Credenciales incorrectas.
+2024-11-20 21:42:52,730 - ERROR - Credenciales incorrectas.
+2024-11-20 21:42:52,945 - ERROR - Credenciales incorrectas.
+2024-11-20 21:42:53,116 - ERROR - Credenciales incorrectas.
+2024-11-20 21:44:44,622 - INFO - Cargando interfaz gráfica...
+2024-11-20 21:44:55,699 - INFO - Base de datos creada
+2024-11-20 21:48:42,143 - INFO - Datos guardados: Usuario: Apolion, Tareas: 3, Tareas Completadas: 2, Día: Miércoles
+2024-11-20 21:55:52,652 - INFO - Exportando tablas a CSV...
+2024-11-20 21:55:53,609 - INFO - Tablas exportadas correctamente
+2024-11-20 21:55:53,609 - INFO - Proceso finalizado correctamente
+2024-11-21 18:21:39,102 - INFO - Cargando interfaz gráfica...
+2024-11-21 18:21:48,411 - ERROR - Credenciales incorrectas.
+2024-11-21 18:21:52,896 - ERROR - Credenciales incorrectas.
+2024-11-21 18:21:59,757 - ERROR - Credenciales incorrectas.
+2024-11-21 18:22:06,064 - ERROR - Credenciales incorrectas.
+2024-11-21 18:22:12,035 - ERROR - Credenciales incorrectas.
+2024-11-21 18:22:20,598 - ERROR - Credenciales incorrectas.
+2024-11-21 18:22:30,005 - ERROR - Credenciales incorrectas.
+2024-11-21 18:22:34,085 - ERROR - Credenciales incorrectas.
+2024-11-21 18:22:47,554 - ERROR - Credenciales incorrectas.
+2024-11-21 18:24:54,276 - ERROR - Credenciales incorrectas.
+2024-11-21 18:25:28,681 - INFO - Conexión a la base de datos establecida
+2024-11-21 18:25:38,450 - INFO - Exportando tablas a CSV...
+2024-11-21 18:25:38,498 - INFO - Tablas exportadas correctamente
+2024-11-21 18:25:38,498 - INFO - Proceso finalizado correctamente
+2024-11-21 19:24:22,254 - INFO - Cargando interfaz gráfica...
+2024-11-21 19:24:32,580 - INFO - Conexión a la base de datos establecida
+2024-11-21 19:24:45,153 - INFO - Datos guardados: Usuario: Apolion, Tareas: 10, Tareas Completadas: 5, Día: Jueves
+2024-11-21 19:24:53,122 - INFO - Datos guardados: Usuario: Apolion, Tareas: 2, Tareas Completadas: 2, Día: Miércoles
+2024-11-21 19:28:57,507 - INFO - Datos guardados: Usuario: Apolion, Tareas: 2, Tareas Completadas: 2, Día: Miércoles
+2024-11-21 19:29:08,457 - INFO - Datos guardados: Usuario: Apolion, Tareas: 8, Tareas Completadas: 4, Día: Martes
+2024-11-21 19:29:12,686 - INFO - Exportando tablas a CSV...
+2024-11-21 19:29:12,723 - INFO - Tablas exportadas correctamente
+2024-11-21 19:29:12,724 - INFO - Proceso finalizado correctamente
