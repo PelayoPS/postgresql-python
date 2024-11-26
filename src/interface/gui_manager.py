@@ -1,6 +1,6 @@
 import tkinter as tk
-from src.interface.loginWindow import LoginWindow
-from src.interface.app import App
+from src.interface.LoginWindow import LoginWindow
+from src.interface.App import App
 
 class GUI:
     """Clase que gestiona las ventanas de la aplicación."""
