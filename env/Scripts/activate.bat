@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\DAM_AFA\2-DAM-1\Sistemas de gestión empresarial\1 Ev\Tema 1\postgresql-python\env
+set VIRTUAL_ENV=C:\Users\pelay\Desktop\repos\postgresql-python\env
 
 if not defined PROMPT set PROMPT=$P$G
 

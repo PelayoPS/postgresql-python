@@ -408,3 +408,9 @@
 >>>>>>> 060f45c2f1f44cbb67ff12bb7412d5c6c01342eb
 >>>>>>> d304b1926fb5aff5ec2e697b38b1cb1d73a8e355
 2024-11-26 20:01:33,880 - INFO - Cargando interfaz gráfica...
+2024-11-27 13:01:34,843 - INFO - Cargando interfaz gráfica...
+2024-11-27 13:01:41,533 - INFO - Conexión a la base de datos establecida
+2024-11-27 13:01:47,871 - INFO - Datos guardados: Usuario: p, Tareas: 1, Tareas Completadas: 1, Día: Lunes
+2024-11-27 13:01:51,501 - INFO - Exportando tablas a CSV...
+2024-11-27 13:01:51,668 - INFO - Tablas exportadas correctamente
+2024-11-27 13:01:51,669 - INFO - Proceso finalizado correctamente
