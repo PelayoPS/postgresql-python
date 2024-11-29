@@ -86,7 +86,7 @@ class Visual:
         plt.show()
 
 # Ruta al archivo CSV
-file_path = os.path.join('E:\\2ºDAM\\Sistemas de gestion empresarial\\Python\\Tarea_Iker\\Postgresql_Python\\postgresql-python', 'datos_ejemplo.csv')
+file_path = os.path.join('datos_ejemplo.csv')
 
 # Cargar los datos sin cabecera
 try:
