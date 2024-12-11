@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    background: linear-gradient(135deg, #f0f0f0 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, #f0f0f0 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, #f0f0f0 25%, transparent 25%),
+                linear-gradient(45deg, #f0f0f0 25%, transparent 25%);
+    background-size: 100px 100px;
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr)); /* Ajustar el tamaño de las filas en base al contenido */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajustar el tamaño de las columnas en base al contenido */
+    gap: 20px;
+    height: 100vh;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    min-width: 300px; /* Establecer un ancho mínimo */
+    min-height: 300px; /* Establecer una altura mínima */
+    overflow: hidden; /* Ocultar el scroll externo */
+}
+.container-content {
+    overflow-y: auto; /* Permitir scroll interno */
+    flex-grow: 1; /* Permitir que el contenido crezca */
+}
+.container:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border-color: #555; /* Cambiar el color del borde a gris */
+    box-shadow: 0 0 15px rgba(85, 85, 85, 0.5); /* Sombra en escala de grises */
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.data-table {
+    width: auto; /* Ajustar el ancho automáticamente */
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center; /* Centrar el contenido de la tabla */
+}
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Aumentar el padding para mejor visualización */
+    text-align: center; /* Centrar el texto en las celdas */
+}
+.data-table th {
+    background-color: #555; /* Cambiar el color de fondo */
+    color: white;
+    font-weight: bold; /* Hacer el texto en negrita */
+}
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.data-table tr:hover {
+    background-color: #333; /* Cambiar el color de fondo al pasar el ratón */
+    color: white; /* Cambiar el color del texto al pasar el ratón */
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container label {
+    margin-bottom: 5px;
+    color: #333;
+}
+.form-container input, .form-container select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+.form-container input:focus, .form-container select:focus {
+    background-color: #e0e0e0;
+}
+.form-container button {
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-container button:hover {
+    background-color: #333;
+}
+.log-messages {
+    overflow-y: auto;
+    max-height: 100%;
+}
+.log-messages ul {
+    list-style-type: none;
+    padding: 0;
+}
+.log-messages li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.log-messages .error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.log-messages .success {
+    background-color: #d4edda;
+    color: #155724;
+}

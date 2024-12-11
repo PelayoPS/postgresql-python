@@ -29,7 +29,8 @@ class Visual:
         plt.xticks(rotation=45)
         plt.yticks(rotation=0)
         plt.tight_layout()
-        plt.show()
+        plt.savefig('heatmap.png')
+        plt.close()
 
     def create_bar_chart(self):
         # Asegurarse de que las columnas sean numéricas
@@ -41,11 +42,11 @@ class Visual:
 
         # Definir colores para cada día de la semana
         day_colors = {
-            'Lunes': 'lighblue',
-            'Martes': 'lighgreen',
-            'Miercoles': 'lighcoral',
-            'Jueves': 'lighgoldenrodyellow',
-            'Viernes': 'lighpink'
+            'Lunes': 'lightblue',
+            'Martes': 'lightgreen',
+            'Miercoles': 'lightcoral',
+            'Jueves': 'lightgoldenrodyellow',
+            'Viernes': 'lightpink'
         }
 
         # Crear una paleta de colores para los usuarios
@@ -61,7 +62,8 @@ class Visual:
         plt.xticks(rotation=45)
         plt.legend(title='Usuarios', loc='upper right')
         plt.tight_layout()
-        plt.show()
+        plt.savefig('barchart_tareas_pendientes.png')
+        plt.close()
 
         # Crear un segundo gráfico de barras para tareas realizadas
         plt.figure(figsize=(12, 6))
@@ -72,7 +74,8 @@ class Visual:
         plt.xticks(rotation=45)
         plt.legend(title='Usuarios', loc='upper right')
         plt.tight_layout()
-        plt.show()
+        plt.savefig('barchart_tareas_realizadas.png')
+        plt.close()
 
         # Crear un tercer gráfico de barras para eficiencia
         plt.figure(figsize=(12, 6))
@@ -83,10 +86,11 @@ class Visual:
         plt.xticks(rotation=45)
         plt.legend(title='Usuarios', loc='upper right')
         plt.tight_layout()
-        plt.show()
+        plt.savefig('barchart_eficiencia.png')
+        plt.close()
 
 # Ruta al archivo CSV
-file_path = os.path.join('E:\\2ºDAM\\Sistemas de gestion empresarial\\Python\\Tarea_Iker\\Postgresql_Python\\postgresql-python', 'datos_ejemplo.csv')
+file_path = os.path.join('datos_ejemplo.csv')
 
 # Cargar los datos sin cabecera
 try:

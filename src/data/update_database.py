@@ -1,5 +1,6 @@
 # modifica los datos dentro de la base de datos usando la estructura de la clase Tabla
 import psycopg2
+from src.data.export_database import export_all_tables_to_csv
 
 class database_manager:
     def __init__(self, user, password):
@@ -34,6 +35,7 @@ class database_manager:
             # Cerrar el cursor y la conexión
             cur.close()
             conn.close()
+            export_all_tables_to_csv(self.user, self.password)
             return True, f"Valor actualizado correctamente en la tabla {table_name}"
         except Exception as e:
             return False, f"Error al actualizar el valor en la tabla {table_name}: {e}"
@@ -64,7 +66,9 @@ class database_manager:
             # Cerrar el cursor y la conexión
             cur.close()
             conn.close()
+            export_all_tables_to_csv(self.user, self.password)
             return True, f"Filas eliminadas correctamente de la tabla {table_name}"
+        
         except Exception as e:
             return False, f"Error al eliminar filas de la tabla {table_name}: {e}"
         
@@ -94,6 +98,7 @@ class database_manager:
             # Cerrar el cursor y la conexión
             cur.close()
             conn.close()
+            export_all_tables_to_csv(self.user, self.password)
             return True, f"Fila insertada correctamente en la tabla {table_name}"
         except Exception as e:
             return False, f"Error al insertar la fila en la tabla {table_name}: {e}"
@@ -120,6 +125,7 @@ class database_manager:
             # Cerrar el cursor y la conexión
             cur.close()
             conn.close()
+            export_all_tables_to_csv(self.user, self.password)
             return True, "Tabla creada correctamente"
         
         except Exception as e:

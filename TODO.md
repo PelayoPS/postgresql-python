@@ -1,12 +1,7 @@
-Manejo de base de datos con "update_database.py"(Pablo)
-Documentación(Alejandro)
-Interfaz, diseño o modificación necesaria(Apolion)
-Manual de usuario(Nacho)
-seaborn:
-    - Heatmap con el número de tareas por día
-    - Gráfico de barras con la eficiencia por usuario(permitir filtrar por user dentro de la gui?)
-Modificar los comentarios con los _types_ en los comentarios
-Manual técnico del desarrollo de la aplicación()
-Testear los límites(más tareas completadas que tareas totales)
-Subir tareas al drive
-Readme estético
+Eliminar y modificar datos fix
+Actualizar en tiempo real table fix
+Gráficos fix
+Para modificar usar nombre como key en la consulta fix
+Eliminar usar nombre como key en la consulta fix
+Meter todo en columna correspondiente fix
+Día debe funcinar con un selector para evitar problemas de encoding fix

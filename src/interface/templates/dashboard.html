@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <div class="container" style="grid-area: 1 / 1 / 2 / 2;">
+        <h1>Datos</h1>
+        <div class="container-content">
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Tareas</th>
+                            <th>Tareas Completadas</th>
+                            <th>Día</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in data %}
+                            <tr>
+                                <td>{{ row[0] }}</td>
+                                <td>{{ row[1] }}</td>
+                                <td>{{ row[2] }}</td>
+                                <td>{{ row[3] }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="grid-area: 1 / 2 / 2 / 3;">
+        <h1>Modificar Datos</h1>
+        <div class="container-content">
+            <div class="form-container">
+                <form action="{{ url_for('dashboard') }}" method="get">
+                    <label for="action">Seleccione una acción:</label>
+                    <select id="action" name="action" onchange="this.form.submit()">
+                        <option value="">--Seleccione una opción--</option>
+                        <option value="update" {% if action == 'update' %}selected{% endif %}>Modificar</option>
+                        <option value="insert" {% if action == 'insert' %}selected{% endif %}>Añadir</option>
+                        <option value="delete" {% if action == 'delete' %}selected{% endif %}>Eliminar</option>
+                    </select>
+                </form>
+                {% if action == 'update' %}
+                    <form action="{{ url_for('update_data') }}" method="post">
+                        <label for="column_name">Nombre de la Columna:</label>
+                        <input type="text" id="column_name" name="column_name" required>
+                        <label for="value">Nuevo Valor:</label>
+                        <input type="text" id="value" name="value" required>
+                        <label for="condition">Condición (ej. Nombre == 'Juan'):</label>
+                        <input type="text" id="condition" name="condition" required>
+                        <button type="submit">Modificar</button>
+                    </form>
+                {% elif action == 'insert' %}
+                    <form action="{{ url_for('insert_data') }}" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="tareas">Tareas:</label>
+                        <input type="text" id="tareas" name="tareas" required>
+                        <label for="tareas_completadas">Tareas Completadas:</label>
+                        <input type="text" id="tareas_completadas" name="tareas_completadas" required>
+                        <label for="dia">Día:</label>
+                        <input type="text" id="dia" name="dia" required>
+                        <button type="submit">Añadir</button>
+                    </form>
+                {% elif action == 'delete' %}
+                    <form action="{{ url_for('delete_data') }}" method="post">
+                        <label for="delete_condition">Condición para eliminar (ej. Nombre == 'Juan'):</label>
+                        <input type="text" id="delete_condition" name="delete_condition" required>
+                        <button type="submit">Eliminar</button>
+                    </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="container" style="grid-area: 2 / 1 / 3 / 2;">
+        <h1>Gráficos</h1>
+        <div class="container-content">
+            <div class="charts">
+                <img src="{{ url_for('static', filename='images/commit_graph.png') }}" alt="commit_graph">      
+                </div>
+        </div>
+    </div>
+    <div class="container" style="grid-area: 2 / 2 / 3 / 3;">
+        <h1>Mensajes de Log</h1>
+        <div class="container-content">
+            <div class="log-messages">
+                <ul id="log-list">
+                    {% for category, message in get_flashed_messages(with_categories=true) %}
+                        <li class="{{ category }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+<script>
+    // Mantener los mensajes de log en el localStorage
+    const logList = document.getElementById('log-list');
+    const logs = JSON.parse(localStorage.getItem('logs')) || [];
+    logs.forEach(log => {
+        const li = document.createElement('li');
+        li.className = log.category;
+        li.textContent = log.message;
+        logList.appendChild(li);
+    });
+
+    // Agregar nuevos mensajes de log al localStorage
+    const newLogs = Array.from(logList.children).map(li => ({
+        category: li.className,
+        message: li.textContent
+    }));
+    localStorage.setItem('logs', JSON.stringify(newLogs));
+</script>
+</body>
+</html>

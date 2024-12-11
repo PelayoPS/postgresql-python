@@ -24,6 +24,7 @@ def setup(user1, password1):
 def crear_database(user1, password1):
     """
     Crea la base de datos si no existe.
+    Crea la tabla tareas si no existe.
 
     Args:
         user1 (str): Nombre de usuario de la base de datos.
@@ -31,6 +32,7 @@ def crear_database(user1, password1):
 
     Returns:
         str: Mensaje indicando que la base de datos ha sido creada.
+
     """
     conn = psycopg2.connect(f"dbname=postgres user={user1} password={password1}")
     conn.autocommit = True
@@ -39,5 +41,17 @@ def crear_database(user1, password1):
     cur.close()
     conn.close()
     conn = psycopg2.connect(f"dbname=productividad user={user1} password={password1}")
+    cur = conn.cursor()
+    # Crear la tabla inicial si no existe
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS tareas (
+        id SERIAL PRIMARY KEY,
+        nombre VARCHAR(100) NOT NULL,
+        tareas INT NOT NULL,
+        tareas_completadas INT NOT NULL,
+        dia DATE NOT NULL
+    )
+    """)
+    cur.close()
     return "Base de datos creada"
 
