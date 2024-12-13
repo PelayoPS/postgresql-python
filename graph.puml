@@ -1,0 +1,141 @@
+@startuml graph
+
+package "src.data" {
+    class database_setup {
+        +setup(user1: str, password1: str): tuple
+        +crear_database(user1: str, password1: str): str
+    }
+
+    class export_database {
+        +export_all_tables_to_csv(user: str, password: str): tuple
+    }
+
+    class update_database {
+        +update_to_table(table_name: str, column_name: str, value, condition: str): tuple
+        +delete_from_table(table_name: str, condition: str): tuple
+        +insert_into_table(table_name: str, values: list): tuple
+        +create_table(): tuple
+    }
+
+    class database_manager {
+        +update_to_table(table_name: str, column_name: str, value, condition: str): tuple
+        +delete_from_table(table_name: str, condition: str): tuple
+        +insert_into_table(table_name: str, values: list): tuple
+        +create_table(): tuple
+    }
+}
+
+package "src.interface" {
+    class web_dashboard {
+        +index(): render_template
+        +login(): redirect
+        +dashboard(): render_template
+    }
+
+    class web_login {
+        +index(): render_template
+        +login(): redirect
+        +dashboard(): render_template
+        +update_data(): redirect
+        +insert_data(): redirect
+        +delete_data(): redirect
+    }
+}
+
+package "src.log" {
+    class logger {
+        +log_setup(): logging.Logger
+    }
+}
+
+package "src.model" {
+    class Usuario {
+        -_nombre: str
+        -_tareas: int
+        -_tareas_completadas: int
+        -_eficiencia: float
+        +nombre: str
+        +tareas: int
+        +tareas_completadas: int
+        +eficiencia: float
+        +calcular_eficiencia(): void
+    }
+
+    class Tabla {
+        +usuario: str
+        +tareas: int
+        +tareas_completadas: int
+        +dia: str
+    }
+}
+
+package "src.main" {
+    class main {
+        +main(): void
+    }
+}
+
+package "src.interface.static.css" {
+    class dashboard_css {
+        +styles: str
+    }
+
+    class login_css {
+        +styles: str
+    }
+}
+
+package "src.interface.templates" {
+    class dashboard_html {
+        +template: str
+    }
+
+    class login_html {
+        +template: str
+    }
+}
+
+package "src.log.logs" {
+    class logfile_log {
+        +log: str
+    }
+}
+
+package "src.data.views" {
+    class seaborn_visuals {
+        +visualize_data(): void
+    }
+
+    class Visual {
+        +create_heatmap(): void
+        +create_bar_chart(): void
+    }
+}
+
+package "src.main" {
+    class run {
+        +run(): void
+    }
+}
+
+database_setup --> export_database
+database_setup --> update_database
+web_dashboard --> database_setup
+web_login --> database_setup
+web_login --> update_database
+main --> logger
+main --> web_login
+web_dashboard --> dashboard_html
+web_login --> login_html
+web_dashboard --> dashboard_css
+web_login --> login_css
+logger --> logfile_log
+Usuario --> Tabla
+seaborn_visuals --> database_setup
+run --> main
+database_manager --> update_database
+database_manager --> export_database
+database_manager --> database_setup
+Visual --> seaborn_visuals
+
+@enduml

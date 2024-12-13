@@ -1,0 +1,21 @@
+@startuml use_cases_graph
+
+actor Usuario
+
+package "Casos de Uso" {
+    usecase "Iniciar Sesión" as UC1
+    usecase "Ver Dashboard" as UC2
+    usecase "Actualizar Datos" as UC3
+    usecase "Insertar Datos" as UC4
+    usecase "Eliminar Datos" as UC5
+    usecase "Exportar Tablas a CSV" as UC6
+}
+
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+Usuario --> UC4
+Usuario --> UC5
+Usuario --> UC6
+
+@enduml
